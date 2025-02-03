@@ -25,12 +25,16 @@ Ce script permet d'identifier le meilleur moment pour acheter un bien en fonctio
 
 ### Détails des calculs
 ***Apport au moment de l'achat***: Votre apport actuel + votre loyer x le nombre de mois d'attente avant l'achat d'un bien.
+
 ***Durée du prêt***: Calculée a partir de la formule classique pour un prêt à taux annualisé, fixe et sans intérêts composés duree = (Log(mensualite / (mensualite - pret * taux_interets / 12)) / Log(1 + taux_interets / 12))/12
+
 ***Prix total du bien***: Apport au moment de l'achat + duree d'emprunt(annes) * 12 * mensualité +loyer * 12 * temps d'attente avant l'achat
 
 ### Remarque importante
 Lorsque les mensualités sont basses par rapport au montant total emprunter, vous pouvez recevoir un message d'erreur disant que certaines prix dépassent votre capacité d'emprunt.
+
 1) Dans ce script cela peut s'expliquer de la façon suivante: Le montant max des mensualités est fixé à environ 33% de vos revenus (si vous n'avez aucun autre prêt connu de votre banque en cours). Lorsque vous empruntez une grosse somme, la durée de remboursement augmente. Ce faisant le montant total à rembourser augmente également car les intérêts s'appliquent à une durée plus longue. De plus, plus la durée de remboursement augmente, plus le taux de remboursement est élevé. Au dela d'un certain montant emprunté, le montant mensualisé des intérêts peut dépasser la valeur maximale autorisée de vos mensualités. Ainsi il devient impossible de rembourser l'emprunt.
+
 2) Dans le cas général des banques, lors d'un emprunt très long les premières mensualités sont majoritairement composées des intérêts et le remboursement du capital est moins rapide. Ainsi, au dessus d'un certain seuil d'emprunt, la durée de remboursement pourrait augmenter très rapidement. Les banques refusent donc ces prêts
    
 La limite de capacité d'emprunt calculée par le script n'est donc pas identique à celle des banques mais donne une limite légèrement surestimée.
@@ -48,10 +52,11 @@ Donne la durée de remboursement de l'emprunt en fonction du temps attendu avant
 Pour lire ce graph il faut choisir un prix, un temps d'attente et relever la couleur du graph à l'intersection des deux valeurs. Cette couleur doit ensuite etre reportée sur l'échelle colorée a froite du graph pour connaitre la durée de l'emprunt. Il peut arriver qu'attendre cinq ans en avant d'acheter réduise la durée de l'emprunt de 7 ou 8 ans. Ainsi en attendant il est parfois possible de finir de rembourser le bien plus tôt. 
 
 ### Astuce 
+
 1) Pour savoir à quel moment il est le plus avantageux d'acheter, il suffit de choisir un prix et de tracer une ligne horizontale sur le grpahique. Identifiez ensuite sur cette ligne la position à laquelle la couleur du graph est la plus sombre: Cela vous donne le temps optimal pendant lequel vous devriez continuer d'épargner avant d'acheter.
+
 2) Gardez bien en tête ces deux valeurs : **Le prix du bien** et **le temps d'attente en années** et reportez-vous au graph de droite. Reportez les deux valeurs sur le graph puis relevez la couleur correspondante et reportez-la sur l'échelle de droite pour connaitre la durée de l'emprunt correspondant aux consitions optimales identifées dans l'étape 1)
 
 
-
 ## Limitations et impacts sur les prévisions
-Assurance 
+Le montant de l'assurance sur l'emprunt n'est pas pris en compte dans les calculs.
