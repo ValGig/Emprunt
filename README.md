@@ -10,11 +10,17 @@ Ce script permet d'identifier le meilleur moment pour acheter un bien en fonctio
 
 ### Liste des entrées
 ***Prix min et max du bien***: Permettent de choisir une fourchette de prix du bien que vous souhaitez acheter. Ces valeurs en euros serviront de bornes aux axes verticaux des graphiques.
+
 ***Revenus mensuels***: Vos revenus mensuels en euros permettent de calculer le montant max de vos mensualités conformément aux *recommandations de taux d'endêtement de 33% en France*.
+
 ***Epargne mensuelle***: Correspond au montant en Euros que vous parvenez à épargner chaque mois en ce moment. Cela servira à calculer l'augmentation de votre apport en fonction du nombre d'années d'attente avant d'emprunter.
+
 ***Mensualité (max par défaut)***: Correspond au montant des mensualités en euros à rembourser une fois le prêt contracté. Par défaut cette valeur est fixée à sa valeur max calculée pour un tax d'endêtement de 33%. Cette valeur est modifiable à la hausse ou à la baisse. 
+
 ***Loyer moyen***: Correspond à votre loyer en euros. Cela correspond à la valeur moyenne estimée de votre loyer sur la période d'attente avant la contraction de l'emprunt.
+
 ***Taux d'intérêt annuel***: Correspond au taux d'intéret annuel qui est à définir avec la banque au moment de la signature du contrat. Cette valeur varie en fonction de la durée du prêt (plus l'emprunt est long, plus le taux est élevé) et dans le temps, pour un montant et une durée donnée, en fonction de l'état du marché. *Indication*: le taux moyen en janvier 2025 est autour de 3.5%. (Valeur à rentrer = 0.035).
+
 ***Apport actuel***: Montant en euro de votre apport à l'heure actuelle. Cela permet de calculer le montant à emprunter pour acheter un bien dans la gamme de prix renseignée. 
 
 ### Détails des calculs
