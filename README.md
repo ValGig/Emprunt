@@ -1,4 +1,4 @@
-# Calculateur d'emprunts
+# Calculateur d'emprunts 
 
 Ce script permet de calculer les durées et couts d'emprunt en fonction du prix du bien à acheter, de vos revenus et de vos charges pour un taux d'intérêt que vous pouvez choisir. 
 ***Le taux d'interet annuel moyen en France en Janvier 2025 est de l'ordre de 3.5% (soit 0.035)***
