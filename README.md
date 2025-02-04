@@ -60,3 +60,4 @@ Pour lire ce graph il faut choisir un prix, un temps d'attente et relever la cou
 
 ## Limitations et impacts sur les prévisions
 Le montant de l'assurance sur l'emprunt n'est pas pris en compte dans les calculs.
+Le marché est fluctuant pour un bien dooné, le prix peut descendre ou monter pendant le temps d'attente. 
